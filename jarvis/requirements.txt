@@ -1,0 +1,35 @@
+# Core
+pydantic>=2.6
+python-dotenv>=1.0
+typer>=0.12
+rich>=13.7
+httpx>=0.27
+
+# Memory
+chromadb>=0.5
+# sqlite3 is stdlib
+
+# LLM (HTTP only — no provider SDK required)
+# Ollama and OpenAI-compatible both use plain HTTP
+
+# Voice (optional but spec-mandated)
+faster-whisper>=1.0 ; platform_system != "Emscripten"
+sounddevice>=0.4
+numpy>=1.26
+openwakeword>=0.6 ; platform_system != "Emscripten"
+# Piper is invoked as a subprocess (install separately: https://github.com/rhasspy/piper)
+
+# Desktop control
+pyautogui>=0.9.54
+
+# File processing
+pypdf>=4.2
+pandas>=2.2
+openpyxl>=3.1
+
+# Browser control (optional)
+playwright>=1.45
+
+# Self-improve / tests
+pytest>=8.2
+gitpython>=3.1

@@ -1,0 +1,12 @@
+[project]
+name = "jarvis"
+version = "0.1.0"
+description = "Jarvis AI Operating System — local-first, self-improving AI companion."
+requires-python = ">=3.10"
+
+[project.scripts]
+jarvis = "jarvis.__main__:app"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
